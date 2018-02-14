@@ -1,5 +1,6 @@
+import datetime
 from django.shortcuts import render
-from django.http import HttpResponse
 
 def index(request):
-	return HttpResponse("Hello my friend franciscouu.")
+	myDate = datetime.datetime.now()		
+	return render(request, 'Index.html', {'fecha_actual': myDate})

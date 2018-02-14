@@ -68,6 +68,10 @@ TEMPLATES = [
     },
 ]
 
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__), 'templates').replace('\\', '/'),
+)
+
 WSGI_APPLICATION = 'FirstProject.wsgi.application'
 
 
